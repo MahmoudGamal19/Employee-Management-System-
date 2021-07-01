@@ -1,0 +1,330 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D7EEA41-AB60-4061-A71A-9D40E86E1E13}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>orecalProject</RootNamespace>
+    <AssemblyName>orecalProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\app\Lenovo\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+    </Reference>
+    <Reference Include="Oracle.Database.Extensions, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\app\Lenovo\product\11.2.0\dbhome_1\ODE.NET\bin\2.x\Oracle.Database.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddE.Designer.cs">
+      <DependentUpon>AddE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHR.Designer.cs">
+      <DependentUpon>AddHR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddHR2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddHR2.Designer.cs">
+      <DependentUpon>AddHR2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addpro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addpro.Designer.cs">
+      <DependentUpon>addpro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="check.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check.Designer.cs">
+      <DependentUpon>check.cs</DependentUpon>
+    </Compile>
+    <Compile Include="C_feed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="C_feed.Designer.cs">
+      <DependentUpon>C_feed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="delD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="delD.Designer.cs">
+      <DependentUpon>delD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dep.Designer.cs">
+      <DependentUpon>Dep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EMPLOYE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EMPLOYE.Designer.cs">
+      <DependentUpon>EMPLOYE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="feed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="feed.Designer.cs">
+      <DependentUpon>feed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edet.Designer.cs">
+      <DependentUpon>edet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR.Designer.cs">
+      <DependentUpon>HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inf.Designer.cs">
+      <DependentUpon>inf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inter.Designer.cs">
+      <DependentUpon>inter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interveiw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interveiw.Designer.cs">
+      <DependentUpon>Interveiw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newDep.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newDep.Designer.cs">
+      <DependentUpon>newDep.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Project.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Project.Designer.cs">
+      <DependentUpon>Project.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Salary.Designer.cs">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Time.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time.Designer.cs">
+      <DependentUpon>Time.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Time1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Time1.Designer.cs">
+      <DependentUpon>Time1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="V_Emp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V_Emp.Designer.cs">
+      <DependentUpon>V_Emp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="V_HR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="V_HR.Designer.cs">
+      <DependentUpon>V_HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="work.Designer.cs">
+      <DependentUpon>work.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddE.resx">
+      <DependentUpon>AddE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHR.resx">
+      <DependentUpon>AddHR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddHR2.resx">
+      <DependentUpon>AddHR2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addpro.resx">
+      <DependentUpon>addpro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="check.resx">
+      <DependentUpon>check.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="C_feed.resx">
+      <DependentUpon>C_feed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delD.resx">
+      <DependentUpon>delD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dep.resx">
+      <DependentUpon>Dep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EMPLOYE.resx">
+      <DependentUpon>EMPLOYE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="feed.resx">
+      <DependentUpon>feed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edet.resx">
+      <DependentUpon>edet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR.resx">
+      <DependentUpon>HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inf.resx">
+      <DependentUpon>inf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inter.resx">
+      <DependentUpon>inter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interveiw.resx">
+      <DependentUpon>Interveiw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newDep.resx">
+      <DependentUpon>newDep.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Project.resx">
+      <DependentUpon>Project.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Salary.resx">
+      <DependentUpon>Salary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time.resx">
+      <DependentUpon>Time.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Time1.resx">
+      <DependentUpon>Time1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V_Emp.resx">
+      <DependentUpon>V_Emp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="V_HR.resx">
+      <DependentUpon>V_HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="work.resx">
+      <DependentUpon>work.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
